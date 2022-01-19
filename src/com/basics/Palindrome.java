@@ -3,7 +3,7 @@ package com.basics;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Palindrime {
+public class Palindrome {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the string : ");
