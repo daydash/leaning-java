@@ -2,19 +2,16 @@ package com.conditions_loops;
 
 import java.util.Scanner;
 
-public class SumOfAll {
+public class Average {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Enter the value of N: ");
+        int N = in.nextInt();
         int sum = 0;
-        System.out.println("Enter the numbers to sum");
-
-        while (true) {
+        for (int i = 0; i < N; i++) {
             int n = in.nextInt();
-            if (n == 0) {
-                System.out.println("The sum is " + sum);
-                return;
-            }
             sum += n;
         }
+        System.out.println("The average is " + ((float) sum / N));
     }
 }

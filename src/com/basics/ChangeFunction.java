@@ -2,7 +2,7 @@ package com.basics;
 
 import java.util.Arrays;
 
-public class ChangeFunction{
+public class ChangeFunction {
 
     public static void main(String[] args) {
         // create an array

@@ -10,13 +10,11 @@ public class LargestOfTwo {
         System.out.print("Enter the second number : ");
         long b = in.nextLong();
 
-        if(a>b){
+        if (a > b) {
             System.out.println(a + " is Greater");
-        }
-        else if (b>a){
+        } else if (b > a) {
             System.out.println(b + " is Greater");
-        }
-        else {
+        } else {
             System.out.println("Both are equal to " + a);
         }
     }

@@ -12,19 +12,15 @@ public class Calculator {
         System.out.print("Select the operation (+,-,*,/) : ");
         char ch = in.next().charAt(0);
         float ans;
-        if (ch == '+'){
-            ans = a+b;
-        }
-        else if (ch == '-'){
-            ans = a-b;
-        }
-        else if (ch == '*'){
-            ans = a*b;
-        }
-        else if (ch == '/'){
-            ans = a/b;
-        }
-        else{
+        if (ch == '+') {
+            ans = a + b;
+        } else if (ch == '-') {
+            ans = a - b;
+        } else if (ch == '*') {
+            ans = a * b;
+        } else if (ch == '/') {
+            ans = a / b;
+        } else {
             System.out.println("WRONG CHOICE!");
             return;
         }

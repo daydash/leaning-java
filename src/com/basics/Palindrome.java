@@ -14,12 +14,12 @@ public class Palindrome {
         // str = str.toLowerCase();
 
         //checking whether the str is 'NOT' palindrome
-        for (int i = 0; i < str.length()/2 ; i++){
+        for (int i = 0; i < str.length() / 2; i++) {
 
 //            if(str.trim().charAt(i) != str.trim.().charAt(str.length()-i-1)){
 //            can use trim() for eliminating spaces
 
-            if(str.charAt(i) != str.charAt(str.length()-i-1)){
+            if (str.charAt(i) != str.charAt(str.length() - i - 1)) {
                 System.out.println(str + " is NOT palindrome");
                 return;
             }

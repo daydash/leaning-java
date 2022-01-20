@@ -12,7 +12,7 @@ public class SimpleInterest {
         System.out.print("Enter the Time : ");
         float t = in.nextFloat();
 
-        float si = p*r*t/100;
+        float si = p * r * t / 100;
         System.out.println("Simple Interest is " + si);
     }
 }

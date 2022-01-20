@@ -13,22 +13,21 @@ public class Armstrong {
         int count = 0, ans = 0;
 
         // Counting the length of number
-        while (n>0){
-            n/=10;
+        while (n > 0) {
+            n /= 10;
             count++;
         }
 
         // Calculation the answer
-        while (temp>0){
-            ans = ans + (int)Math.pow(temp%10,count);
-            temp/=10;
+        while (temp > 0) {
+            ans = ans + (int) Math.pow(temp % 10, count);
+            temp /= 10;
         }
 
         // Checking the printing if the number is armstrong
-        if (checker == ans){
+        if (checker == ans) {
             System.out.println(checker + " is Armstrong");
-        }
-        else{
+        } else {
             System.out.println(checker + " is not Armstrong");
         }
 

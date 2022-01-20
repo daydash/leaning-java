@@ -17,20 +17,20 @@ package com.conditions_loops;
 import java.util.Scanner;
 
 public class LargestOfAll {
-        public static void main(String[] args) {
-            Scanner in = new Scanner(System.in);
-            System.out.println("Enter the numbers to find the largest one:");
-            int max = in.nextInt(); // assumed that the first number is the largerst
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the numbers to find the largest one:");
+        int max = in.nextInt(); // assumed that the first number is the largerst
 
-            while(true){
-                int n = in.nextInt();
-                if (n == 0){
-                    System.out.println("The largest number is " + max);
-                    return;
-                }
-                if (n>max){
-                    max = n;
-                }
+        while (true) {
+            int n = in.nextInt();
+            if (n == 0) {
+                System.out.println("The largest number is " + max);
+                return;
+            }
+            if (n > max) {
+                max = n;
             }
         }
+    }
 }

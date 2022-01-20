@@ -12,11 +12,11 @@ public class FibonacciSeries {
         int n = in.nextInt();
         System.out.println("Fibonacci Series upto " + n + " is :");
         System.out.print(a + " " + b + " ");
-        for(int i = 2; i<n; i++){
-            sum = a+b;
+        for (int i = 2; i < n; i++) {
+            sum = a + b;
             System.out.print(sum + " ");
-            a=b;
-            b=sum;
-    }
+            a = b;
+            b = sum;
+        }
     }
 }

@@ -10,7 +10,7 @@ public class TypeCasting {
 //        System.out.println(num);
 
         // type casting
-        int num = (int)(67.56f);
+        int num = (int) (67.56f);
 //        System.out.println(num);
 
         // automatic type promotion in expressions

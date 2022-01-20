@@ -9,7 +9,7 @@ public class Prime {
         int n = in.nextInt();
 
         // if the number is either zero or negative
-        if(n <= 1) {
+        if (n <= 1) {
             System.out.println("Neither prime nor composite");
             return;
         }
