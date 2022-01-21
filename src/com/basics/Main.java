@@ -36,5 +36,14 @@ public class Main {
         int y = 0xA;
         System.out.println("y = " + y);
 
+        // integer division in floating point context
+        int p = 5;
+        int q = 7;
+        float divide = p/q;
+        System.out.println(divide);
+        divide = (float) p/q;
+        System.out.println(divide);
+
+
     }
 }
