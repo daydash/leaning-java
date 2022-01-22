@@ -10,7 +10,7 @@ public class Largest {
         int b = in.nextInt();
         int c = in.nextInt();
 
-        // Q: Find the largest of the 3 numbers
+        // normal code
 //        int max = a;
 //        if (b > max) {
 //            max = b;
@@ -19,6 +19,7 @@ public class Largest {
 //            max = c;
 //        }
 
+        // hacks
         int max = Math.max(c, Math.max(a, b));
 
         System.out.println(max);
