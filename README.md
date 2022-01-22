@@ -5,4 +5,5 @@ The .java files are in [src](https://github.com/daydash/leaning-java/tree/master
 ## Snaps
 [basics](https://github.com/daydash/leaning-java/tree/master/src/com/basics) <br />
 [conditions_loops](https://github.com/daydash/leaning-java/tree/master/src/com/conditions_loops) <br />
-[daydash](https://github.com/daydash/leaning-java/tree/master/src/com/daydash)
+[daydash](https://github.com/daydash/leaning-java/tree/master/src/com/daydash) <br />
+[methods](https://github.com/daydash/leaning-java/tree/master/src/com/methods)
