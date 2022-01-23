@@ -2,7 +2,7 @@ package com.methods;
 
 import java.util.Scanner;
 
-public class PrimeBeteenTwo {
+public class PrimeBetweenTwo {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the range");
