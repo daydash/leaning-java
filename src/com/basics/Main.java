@@ -41,13 +41,24 @@ public class Main {
         // integer division in floating point context
         int p = 5;
         int q = 7;
-        float divide = p/q;
+        float divide = p / q;
         System.out.println(divide);
-        divide = (float) p/q;
+        divide = (float) p / q;
         System.out.println(divide);
 
         // What is inside the 'in'
 //        Scanner in = new Scanner(System.in);
 //        System.out.println(in);  // java.util.Scanner[delimiters=\p{javaWhitespace}+][position=0][match valid=false][need input=false][source closed=false][skipped=false][group separator=\x{2c}][decimal separator=\x{2e}][positive prefix=][negative prefix=\Q-\E][positive suffix=][negative suffix=][NaN string=\QNaN\E][infinity string=\Q∞\E]
+
+        // String input after any input is taken
+        Scanner in = new Scanner(System.in);
+        int i = in.nextInt();
+        double d = in.nextDouble();
+        in.nextLine();
+        String s = in.nextLine();
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
     }
 }
