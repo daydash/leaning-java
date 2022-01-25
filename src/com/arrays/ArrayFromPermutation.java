@@ -22,8 +22,8 @@ public class ArrayFromPermutation {
 //            nums[i] = in.nextInt();
 //        }
 
-        int[] nums = {0,2,1,5,3,4};
-        int[] xnums = {5,0,1,2,3,4};
+        int[] nums = {0, 2, 1, 5, 3, 4};
+        int[] xnums = {5, 0, 1, 2, 3, 4};
 
         int[] ans = afp(nums);
         int[] xans = afp(xnums);
