@@ -1,6 +1,7 @@
 package com.arrays;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ArrayListMain {
@@ -8,6 +9,8 @@ public class ArrayListMain {
         Scanner in = new Scanner(System.in);
         // Syntax
         ArrayList<Integer> list = new ArrayList<>(5);
+
+//        ArrayList<Integer> ans = new ArrayList<>(Collections.nCopies(10,0)); // next 10 elements are initialized with value 0
 
 //        list.add(67);
 //        list.add(234);
