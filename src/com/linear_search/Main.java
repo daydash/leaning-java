@@ -1,12 +1,41 @@
 package com.linear_search;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = {23, 45, 1, 2, 8, 19, -3, 16, -11, 28};
-        int target = 19;
-        int ans = linearSearch(array, target);
-        System.out.println(target + " is present at " + ans + "th index");
+//        int[] array = {23, 45, 1, 2, 8, 19, -3, 16, -11, 28};
+//        int target = 19;
+//        int ans = linearSearch(array, target);
+//        System.out.println(target + " is present at index: " + ans);
+
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the length of array: ");
+        int n = in.nextInt();
+        System.out.println("Enter the elements:");
+
+        for (int i = 0; i < n; i++) {
+            list.add(in.nextInt());
+        }
+
+        int target = in.nextInt();
+
+        int ans = linearSearch2(list, target);
+        System.out.println(ans);
+
+    }
+
+    static int linearSearch2(ArrayList<Integer> list, int target) {
+        if (list.isEmpty()) return -1;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == target) return i;
+        }
+        return -1;
     }
 
     // search in the array: return the index if item found
