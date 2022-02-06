@@ -7,4 +7,5 @@ The .java files are in [src](https://github.com/daydash/leaning-java/tree/master
 [conditions_loops](https://github.com/daydash/leaning-java/tree/master/src/com/conditions_loops) <br />
 [daydash](https://github.com/daydash/leaning-java/tree/master/src/com/daydash) <br />
 [methods](https://github.com/daydash/leaning-java/tree/master/src/com/methods) <br />
-[arrays](https://github.com/daydash/leaning-java/tree/master/src/com/arrays)
+[arrays](https://github.com/daydash/leaning-java/tree/master/src/com/arrays) <br />
+[linear_search](https://github.com/daydash/leaning-java/tree/master/src/com/linear_search)
