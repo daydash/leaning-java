@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 4, 19};
         int num = 10;
-        String name = "Yash Bhatnagar";
+        String name = "daydash";
         System.out.println(name);
 
         String a = "Yash";
@@ -15,6 +15,6 @@ public class Main {
 
         // the questions arise here is that...
         // where does the original object "Yash" goes when "Bhatnagar" is made and a(ref. variable) is now pointing toward "Bhatnagar" meanwhile "Yash" has no reference variable???
-        // The very cool and short answer to is: Garbage Collector #RIPCpp #JavaVsC++
+        // The very cool and short answer to that is: Garbage Collector #RIPCpp #JavaVsC++
     }
 }
