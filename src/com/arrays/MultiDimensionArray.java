@@ -3,7 +3,7 @@ package com.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MultiDimension {
+public class MultiDimensionArray {
     public static void main(String[] args) {
         /*
              1 2 3
