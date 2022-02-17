@@ -1,4 +1,4 @@
-package com.arrays;
+package com.linear_search;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class SearchInStrings {
             return false;
         }
 
-        for(char ch : str.toCharArray()) {
+        for (char ch : str.toCharArray()) {
             if (ch == target) {
                 return true;
             }
