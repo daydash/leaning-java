@@ -19,26 +19,25 @@ public class RemoveDigit {
         System.out.println(Solution2(n5));
     }
 
-    static int Solution2(int N){
+    static int Solution2(int N) {
         int count = 0;
         int td = 0;
-        if(N<0){
+        if (N < 0) {
             N = Math.abs(N);
             td = totalDigits(N);
-            count = countZero(N,td);
+            count = countZero(N, td);
             N = removeFive(N);
             N = reverse(N);
-            N = (int) (N * Math.pow(10,count));
-            return N*-1;
-        }
-        else{
+            N = (int) (N * Math.pow(10, count));
+            return N * -1;
+        } else {
             N = reverse(N);
             N = removeFive(N);
             return N;
         }
     }
 
-    static int totalDigits(int N){
+    static int totalDigits(int N) {
         int td = 0;
         while (N > 0) {
             td++;
@@ -47,29 +46,25 @@ public class RemoveDigit {
         return td;
     }
 
-    static int countZero(int N,int td){
+    static int countZero(int N, int td) {
         int count = 0;
-        while(N>0){
-
-            if(N%10==0){
-                count++;
+        if (N % 10 == 0) {
+            count++;
+            td--;
+            N /= 10;
+            while (N % 10 == 0 && td != 0) {
                 td--;
-                N/=10;
-                while(N%10==0 && td!=0) {
-                    td--;
-                    count++;
-                    N /= 10;
-                }
+                count++;
+                N /= 10;
             }
-            if(N%10==5){
-                N/=10;
-                while(N%10==0 && td!=0){
-                    td--;
-                    count++;
-                    N/=10;
-                }
+        }
+        if (N % 10 == 5) {
+            N /= 10;
+            while (N % 10 == 0 && td != 0) {
+                td--;
+                count++;
+                N /= 10;
             }
-            break;
         }
         return count;
     }
@@ -78,27 +73,26 @@ public class RemoveDigit {
         boolean flag = true;
         int count = 0;
         int rev = 0;
-        while(N>0){
-            if(N%10 == 5 && flag){
+        while (N > 0) {
+            if (N % 10 == 5 && flag) {
                 flag = false;
-                N/=10;
+                N /= 10;
                 continue;
             }
-            rev = rev*10 + N%10;
-            N/=10;
+            rev = rev * 10 + N % 10;
+            N /= 10;
         }
         return rev;
     }
 
-    static int reverse(int N){
+    static int reverse(int N) {
         int rev = 0;
-        while(N>0){
-            rev = rev*10 + N%10;
-            N/=10;
+        while (N > 0) {
+            rev = rev * 10 + N % 10;
+            N /= 10;
         }
         return rev;
     }
-
 
 
     //    static int Solution(int N){
