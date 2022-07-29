@@ -1,19 +1,17 @@
-package com.arrays;
+// Considering 2 is not an Emrip Number, line 41 -> if (n <= 2)
+// if need to consider 2 as an Emrip Number, line 41 -> if (n <= 1)
 
-import java.io.*;
-import java.util.*;
+package com.arrays;
 
 public class CountEmirp {
 
-    public static void main(String args[]) throws IOException {
-//        int n = 13;
+    public static void main(String args[]) {
+
         int[] arr = {1, 13, 2, 31, 17};
+//        int[] arr = {22,51,49,60,2};
         int n = arr.length;
-//        int count = 0;
-//        for(int i = 0; i<arr.length ; i++) {
-//            if (isEmirp(arr[i]) == true) count++;
-//        }
-        System.out.println(countEmirp(arr,n));
+
+        System.out.println(countEmirp(arr, n));
     }
 
     public static int countEmirp(int[] input1, int input2) {
